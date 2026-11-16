@@ -1,0 +1,162 @@
+<title>Ламанова, главная 3</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Manrope:wght@400;500&display=swap">
+<style>
+:root{--c1:#161514;--c2:#2B2A28;--c3:#A8584F;--tx:#fff;--bb:#F2EEE6;--bf:#121212;--bg:#161514;--fg:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.5 'Manrope',sans-serif;transition:color .35s}
+a{text-decoration:none;color:inherit}
+#cols{position:fixed;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;z-index:0}
+#cols i{display:block;position:relative}
+#cols i:nth-child(1){background:var(--c1)}#cols i:nth-child(2){background:var(--c2)}#cols i:nth-child(3){background:var(--c3)}
+.tx{position:fixed;inset:0;z-index:1;pointer-events:none;mix-blend-mode:soft-light;background-size:1000px;opacity:0}
+main{position:relative;z-index:2}
+.w{width:100%;max-width:1280px;margin:0 auto;position:relative}
+.btn{display:inline-block;padding:10px 16px;font:400 16px/22px 'Manrope',sans-serif;border-radius:4px;background:var(--bb);color:var(--bf);transition:background .35s,color .35s;border:0;cursor:pointer}
+.btn.s{background:rgba(20,16,14,.55);color:#fff}
+h1,h2,h3{font-family:'Jost','Manrope',sans-serif;font-weight:300;margin:0}
+h2{font-size:74px;line-height:1;text-align:center;letter-spacing:-.01em}
+.mp{position:fixed;left:12px;bottom:12px;z-index:20;display:flex;gap:4px;padding:4px;background:rgba(20,16,14,.82);border-radius:6px}
+.mp button{font:400 14px/20px 'Manrope',sans-serif;padding:6px 10px;border:0;border-radius:4px;background:transparent;color:#fff;cursor:pointer}
+.mp button.on{background:#F2EEE6;color:#121212}
+/* hero */
+.hero{height:750px}
+.hero .logo{position:absolute;left:40px;top:20px;width:232px;z-index:5}
+.hero .menu{position:absolute;right:40px;top:26px;display:flex;gap:10px;align-items:center;font-weight:500;z-index:5}
+.hero .menu b{display:block;width:22px;height:14px;border-top:2px solid currentColor;border-bottom:2px solid currentColor;position:relative}
+.hero .menu b:after{content:"";position:absolute;left:0;right:0;top:4px;height:2px;background:currentColor}
+.hero h1{position:absolute;left:40px;top:90px;width:640px;font-size:52px;line-height:1.05;letter-spacing:-.01em;z-index:5}
+.chips{position:absolute;right:40px;top:100px;display:flex;flex-direction:column;gap:10px;align-items:flex-end;z-index:5}
+.chips span{padding:4px 10px;background:#F2EEE6;color:#1E1B18;font-weight:500;border-radius:4px}
+.head{position:absolute;left:18px;top:340px;height:70px;z-index:5}
+.hc{position:absolute;top:0;height:686px;width:33.3333%}
+.hc img.d{position:absolute;left:50%;transform:translateX(-50%);top:245px;height:380px;filter:drop-shadow(0 12px 16px rgba(0,0,0,.4))}
+.hc p{position:absolute;left:0;right:0;top:630px;margin:0;text-align:center;font-size:16px;line-height:1.3}
+.hc p small{display:block;font-size:14px;opacity:.85}
+.tabs{position:absolute;left:0;right:0;top:686px;height:64px;display:grid;grid-template-columns:1fr 1fr 1fr;background:rgba(20,16,14,.32)}
+.tabs a{text-align:center;font:500 18px/64px 'Manrope',sans-serif;color:#fff}
+/* events */
+.ev{margin-top:150px;position:relative;padding-bottom:0}
+.ev .top{text-align:center}
+.ev .top .btn{margin-top:20px}
+.evg{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:40px}
+.evg>div{padding:0 40px;text-align:center}
+.evg .dt{font:300 28px/1.15 'Jost','Manrope',sans-serif;text-align:left;height:64px}
+.evg img{display:block;width:100%;height:260px;object-fit:cover;object-position:center 30%;margin:36px 0 30px}
+.evg h3{font-size:28px;line-height:1.15;min-height:64px}
+.evg p{margin:20px 0 24px;min-height:44px}
+/* archive */
+.ar{margin-top:150px}
+.ar .top{text-align:center}.ar .top .btn{margin-top:20px}
+.coll{position:relative;height:880px;margin-top:0}
+.ac{position:absolute;background:#2A7C6F url(a/tex2.jpg) 0 0/900px;background-blend-mode:soft-light;overflow:hidden;cursor:pointer}
+.ac img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.ac b{position:absolute;left:50%;top:50%;width:88px;height:88px;margin:-44px 0 0 -44px;border-radius:50%;background:#000;color:#fff;font:500 16px/88px 'Manrope',sans-serif;text-align:center;opacity:0;transition:opacity .2s}
+.ac:hover img,.ac.on img{transform:scale(.86)}.ac:hover b,.ac.on b{opacity:1}
+/* footer */
+.ft{margin-top:150px;position:relative;min-height:590px}
+.ft .col{position:absolute;width:331px}
+.ft h3{font-size:28px;line-height:1.2;margin-bottom:10px}
+.ft .legal{position:absolute;left:48px;top:390px;width:740px;font-size:14px;line-height:1.5;opacity:.9}
+.ft .hoh{position:absolute;right:16px;bottom:0;height:540px;filter:drop-shadow(0 12px 16px rgba(0,0,0,.4))}
+@media (max-width:900px){
+ h2{font-size:48px}
+ .hero{height:auto;min-height:750px}.hero h1{font-size:34px;width:calc(100% - 80px)}.chips{display:none}
+ .hc img.d{height:240px;top:300px}.hc p{top:560px;font-size:13px}.hc{height:620px}.tabs{top:620px}.hero{min-height:684px}
+ .evg{grid-template-columns:1fr}.evg>div{padding:0 16px 40px}
+ .coll{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:24px 16px}.coll .ac{position:relative;left:auto!important;top:auto!important;width:auto!important;height:240px!important}
+ .ft .col,.ft .legal,.ft .hoh{position:relative;left:auto!important;top:auto!important;width:auto;padding:0 16px 24px}.ft .hoh{height:360px;display:block;margin-left:auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div id="cols"><i></i><i></i><i></i></div>
+<div class="tx" style="background-image:url(a/tex2.jpg)"></div>
+<div class="tx" style="background-image:url(a/texA.jpg)"></div>
+<div class="tx" style="background-image:url(a/texB.jpg)"></div>
+<div class="tx" style="background-image:url(a/texC.jpg)"></div>
+
+<div class="mp" aria-label="Палитра"><button data-p="mono" class="on">Ч/б и акцент</button><button data-p="color">Цветная</button></div>
+
+<main>
+<section class="w hero sec" data-i="0">
+ <img class="logo" src="a/text_w.png" alt="Музей моды и портновского искусства имени Н. П. Ламановой">
+ <div class="menu">Меню<b></b></div>
+ <img class="head" src="a/head_w.png" alt="">
+ <h1>Платья, которые стоит увидеть вживую</h1>
+ <div class="chips"><span>Сегодня открыто 11:00–19:00</span><span>Понедельник и воскресенье выходной</span></div>
+ <div class="hc" style="left:0"><img class="d" src="a/narod.png" alt="Платье с широкими рукавами" style="top:247px;height:378px"><p>Платье с широкими рукавами<small>1923</small></p></div>
+ <div class="hc" style="left:33.3333%"><img class="d" src="a/visit.png" alt="Платье визитное"><p>Платье визитное, бежевое<small>1896</small></p></div>
+ <div class="hc" style="left:66.6666%"><img class="d" src="a/yellow.png" alt="Платье вечернее"><p>Платье вечернее, жёлтое<small>1900</small></p></div>
+ <div class="tabs"><a href="#">Визит</a><a href="#">Афиша</a><a href="#">Архив</a></div>
+</section>
+
+<section class="w ev sec" data-i="1">
+ <div class="top"><h2>События</h2><a class="btn s" href="#">Все события</a></div>
+ <div class="evg">
+  <div><div class="dt">26 ноября 2026<br>18:00</div><img src="a/shanel.jpg" alt=""><h3>Русская Шанель: подиумный показ</h3><p>ДКРТ, от 2 700 ₽</p><a class="btn" href="#">Записаться</a></div>
+  <div><div class="dt">Вторник – суббота<br>Три раза в день</div><img src="a/trio.jpg" alt=""><h3>Обзор экспозиции хранителем</h3><p>11:00, 14:00 и 17:00, входит в билет</p><a class="btn" href="#">Записаться</a></div>
+  <div><div class="dt">5 декабря 2026<br>12:00</div><img src="a/constr.jpg" alt=""><h3>Воркшоп по конструированию</h3><p>2,5 часа, 1 500 ₽</p><a class="btn" href="#">Записаться</a></div>
+ </div>
+</section>
+
+<section class="w ar sec" data-i="2">
+ <div class="top"><h2>Архив</h2><a class="btn" href="#">Весь архив</a></div>
+ <div class="coll" style="margin-top:-56px">
+  <a class="ac" style="left:3.75%;top:110px;width:170px;height:246px"><img src="a/pink.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac" style="left:21.3%;top:270px;width:240px;height:160px"><img src="a/flowers.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac" style="left:46.9%;top:296px;width:150px;height:234px"><img src="a/yellow.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac on" style="left:69.8%;top:362px;width:200px;height:274px"><img src="a/grey.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac" style="left:82.8%;top:107px;width:140px;height:187px"><img src="a/ball.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac" style="left:8.8%;top:595px;width:200px;height:312px"><img src="a/narod.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac" style="left:32%;top:536px;width:170px;height:305px"><img src="a/hohlova2.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac" style="left:53%;top:636px;width:190px;height:302px"><img src="a/visit.jpg" alt=""><b>Смотреть</b></a>
+  <a class="ac" style="left:74.2%;top:676px;width:170px;height:270px"><img src="a/ivory.jpg" alt=""><b>Смотреть</b></a>
+ </div>
+</section>
+
+<section class="w ft sec" data-i="3" style="margin-top:210px">
+ <h2>Приходите</h2>
+ <div class="col" style="left:48px;top:130px"><h3>Режим работы</h3>Вторник – суббота, 11:00–19:00.<br>Понедельник и воскресенье выходной.<br>Обзоры экспозиции в 11:00, 14:00 и 17:00.</div>
+ <div class="col" style="left:48px;top:320px"><h3>Билеты</h3>Полный 500 ₽, льготный 350 ₽.<br>Обзор экспозиции входит в билет.</div>
+ <div class="col" style="left:475px;top:130px"><h3>Как нас найти</h3>Нижний Новгород, ул. Сергиевская, д. 8, пом. П2. Остановка «Улица Добролюбова», дальше вверх по Сергиевской до Арт Лофта PARLE.<br><a class="btn" href="#" style="margin-top:16px">Как добраться</a></div>
+ <div class="col" style="left:475px;top:370px"><h3>Связь</h3>+7 (991) 830-12-76<br>olaparle@yandex.ru<br>Telegram: t.me/lamanovann</div>
+ <div class="legal" style="top:520px">Частное учреждение культуры «Музей моды и портновского искусства им. Н. П. Ламановой». ИНН/КПП 5260482972/526001001, ОГРН 1225200012674. Входит в Ассоциацию частных и народных музеев России.</div>
+ <img class="hoh" src="a/hohlova.png" alt="" style="z-index:1">
+</section>
+<div style="height:40px"></div>
+</main>
+
+<script>
+var P={
+ mono:[ {c:['#161514','#2B2A28','#A8584F'],t:'#fff',b:['#F2EEE6','#121212']},
+        {c:['#EFEBE3','#DDD7CC','#A9C4BC'],t:'#1E1B18',b:['#121212','#F2EEE6']},
+        {c:['#161514','#2B2A28','#8E6414'],t:'#fff',b:['#F2EEE6','#121212']},
+        {c:['#EFEBE3','#DDD7CC','#D8B4AA'],t:'#1E1B18',b:['#121212','#F2EEE6']} ],
+ color:[ {c:['#A8584F','#2A7C6F','#3E4A5C'],t:'#fff',b:['#F2EEE6','#121212']},
+        {c:['#3E4A5C','#6A3E55','#2A7C6F'],t:'#fff',b:['#F2EEE6','#121212']},
+        {c:['#C4684F','#B8831F','#B4586A'],t:'#fff',b:['#F2EEE6','#121212']},
+        {c:['#3E4A5C','#A8584F','#2A7C6F'],t:'#fff',b:['#F2EEE6','#121212']} ]
+};
+var cur='mono',root=document.documentElement.style,secs=[].slice.call(document.querySelectorAll('.sec')),txs=[].slice.call(document.querySelectorAll('.tx'));
+function hx(h){return [1,3,5].map(function(i){return parseInt(h.substr(i,2),16)})}
+function mix(a,b,t){var A=hx(a),B=hx(b);return 'rgb('+A.map(function(v,i){return Math.round(v+(B[i]-v)*t)}).join(',')+')'}
+function sm(t){t=Math.max(0,Math.min(1,t));return t*t*(3-2*t)}
+function draw(){
+ var th=P[cur],y=window.scrollY+innerHeight*.55,Z=Math.max(180,innerHeight*.28),n=secs.length;
+ var ts=[];
+ for(var k=0;k<n-1;k++){var b=secs[k+1].getBoundingClientRect().top+window.scrollY-75;ts.push(sm((y-(b-Z))/(2*Z)))}
+ var cols=th[0].c.slice(),idx=0;
+ for(k=0;k<n-1;k++){cols=cols.map(function(c,i){return mix(rgbToHex(c),th[k+1].c[i],ts[k])});if(ts[k]>=.5)idx=k+1}
+ root.setProperty('--c1',cols[0]);root.setProperty('--c2',cols[1]);root.setProperty('--c3',cols[2]);
+ root.setProperty('--tx',th[idx].t);root.setProperty('--bb',th[idx].b[0]);root.setProperty('--bf',th[idx].b[1]);
+ document.body.style.background=cols[0];
+ for(var i=0;i<n;i++){var w=(i==0?1-ts[0]:(i==n-1?ts[n-2]:ts[i-1]*(1-ts[i])));txs[i].style.opacity=Math.max(0,w)}
+}
+function rgbToHex(c){if(c[0]=='#')return c;var m=c.match(/\d+/g);return '#'+m.map(function(v){return ('0'+(+v).toString(16)).slice(-2)}).join('')}
+var q=false;function req(){if(!q){q=true;requestAnimationFrame(function(){q=false;draw()})}}
+addEventListener('scroll',req,{passive:true});addEventListener('resize',req);
+document.querySelectorAll('.mp button').forEach(function(b){b.onclick=function(){cur=b.dataset.p;document.querySelectorAll('.mp button').forEach(function(x){x.classList.toggle('on',x===b)});draw()}});
+draw();
+</script>

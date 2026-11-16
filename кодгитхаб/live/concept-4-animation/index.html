@@ -1,0 +1,154 @@
+<title>Ламанова, главная 4</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wdth,wght@62.5..100,100..900&family=Manrope:wght@400;500&display=swap">
+<style>
+:root{--bg:#fff;--fg:#1E1B18;--ac:#2A7C6F;--sand:#D9D3C8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.5 'Manrope',sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.w{max-width:1280px;margin:0 auto;padding:0 40px;position:relative}
+.ser{font-family:'Noto Serif Display','Playfair Display',serif;font-weight:300;font-stretch:62.5%;font-variation-settings:'wdth' 62.5;letter-spacing:-.01em}
+.btn{display:inline-block;padding:10px 16px;font:400 16px/22px 'Manrope',sans-serif;border-radius:4px;background:#121212;color:#F2EEE6;border:0;white-space:nowrap}
+.btn.s{background:#3A3D42}.btn.c{background:#F2EEE6;color:#121212}
+.bar{position:absolute;left:0;right:0;top:0;height:68px;z-index:10}
+.bar .w{display:flex;justify-content:space-between;align-items:center;height:68px}
+.bar img{width:232px}
+.menu{display:flex;gap:10px;align-items:center;font-weight:500}
+.menu b{display:block;width:22px;height:14px;border-top:2px solid var(--fg);border-bottom:2px solid var(--fg);position:relative}
+.menu b:after{content:"";position:absolute;left:0;right:0;top:4px;height:2px;background:var(--fg)}
+/* hero */
+.hero{position:relative;height:750px;isolation:isolate;background:#fff}
+#cv{position:absolute;left:50%;top:0;transform:translateX(-50%);height:640px;width:auto;z-index:1}
+.hero h1{position:absolute;left:0;right:0;top:215px;margin:0;text-align:center;font-size:122px;line-height:1;color:#fff;mix-blend-mode:difference;z-index:3;padding:0 20px}
+.cap{position:absolute;left:calc(50% + 200px);top:596px;z-index:4;font-size:16px;line-height:1.3;transition:opacity .5s}
+.cap small{display:block;font-size:14px;opacity:.8}
+.info{position:absolute;left:0;right:0;top:686px;z-index:4}
+.info .w{display:grid;grid-template-columns:1fr 1fr 1fr;font-weight:500;max-width:none;padding:0 40px}
+.info .w div:nth-child(2){text-align:center}.info .w div:nth-child(3){text-align:right}
+.head{position:absolute;left:18px;top:340px;height:70px;z-index:4}
+/* stats */
+.stats{margin-top:150px}.stats .w{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;max-width:none;padding:0 40px}
+.stats .w>div:nth-child(2){text-align:center}.stats .w>div:nth-child(3){text-align:right}
+.big{font:400 64px/1 'Manrope',sans-serif;letter-spacing:-.02em;color:var(--ac)}
+.lab{font-size:40px;line-height:1.1;margin-top:20px}
+/* manifesto */
+.man{margin-top:150px}
+.man p{margin:0;font:500 56px/1.25 'Manrope',sans-serif;letter-spacing:-.02em;text-align:center}
+.man img{display:inline-block;vertical-align:middle;width:150px;height:56px;border-radius:4px;object-fit:cover;margin:0 6px;position:relative;top:-4px}
+/* section title row */
+.row{display:flex;justify-content:space-between;align-items:center}
+h2{margin:0;font-size:74px;line-height:1}
+section{margin-top:150px}
+/* events */
+.ev{margin-top:70px}
+.ev a{display:grid;grid-template-columns:1fr 340px auto;gap:40px;align-items:center;padding:36px 0}
+.ev h3{margin:0;font-size:64px;line-height:1.05;transition:color .2s}
+.ev a:hover h3{color:var(--ac)}
+.ev p{margin:0;font-size:16px}.ev p span{opacity:.7}
+#pv{position:fixed;left:0;top:0;width:300px;height:200px;object-fit:cover;border-radius:4px;box-shadow:0 14px 30px rgba(0,0,0,.25);pointer-events:none;opacity:0;transform:scale(.9) rotate(-3deg);transition:opacity .2s,transform .2s;z-index:20}
+#pv.on{opacity:1;transform:scale(1) rotate(-3deg)}
+/* cards */
+.cards{margin-top:60px}
+.card{position:sticky;height:560px;border-radius:16px;overflow:hidden;margin-bottom:24px;display:flex;padding:56px;color:#fff}
+.card:nth-child(1){top:80px;background:var(--ac)}.card:nth-child(2){top:96px;background:#1E1B18}.card:nth-child(3){top:112px;background:#3E4A5C}.card:nth-child(4){top:128px;background:var(--sand);color:var(--fg)}
+.card h3{margin:0;font-size:84px;line-height:1;max-width:560px}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin:40px 0}
+.tags span{padding:4px 14px;border-radius:4px;background:rgba(255,255,255,.16);font-size:16px;line-height:24px}
+.card:nth-child(4) .tags span{background:rgba(30,27,24,.1)}
+.card:nth-child(4) .btn{background:#121212;color:#F2EEE6}
+.card .l{display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.card .ph{position:absolute;right:0;top:0;width:48%;height:100%;object-fit:cover}
+/* cta */
+.cta{margin-top:150px;background:var(--ac);color:#fff;padding:80px 0 56px;position:relative;overflow:hidden}
+.cta h2{color:#fff}
+.cols{display:grid;grid-template-columns:1fr 1fr 380px;gap:40px;margin-top:60px}
+.cols h4{margin:0 0 10px;font:300 36px/1.1 'Noto Serif Display',serif;font-stretch:62.5%;font-variation-settings:'wdth' 62.5}
+.cols div{max-width:331px}
+.legal{font-size:14px;line-height:1.5;margin-top:60px;max-width:740px;color:#E4F1EE}
+.hoh{position:absolute;right:40px;bottom:0;height:520px;filter:drop-shadow(0 12px 16px rgba(0,0,0,.35))}
+@media (max-width:900px){
+ .hero{height:620px}#cv{height:440px}.hero h1{font-size:13vw;top:150px}.cap{left:auto;right:16px;top:450px;text-align:right}.info{top:520px}.info .w{grid-template-columns:1fr;gap:4px}.head{display:none}.bar img{width:170px}
+ .w{padding:0 16px}.stats .w{grid-template-columns:1fr}.big{font-size:48px}.man p{margin:0;font:500 56px/1.25 'Manrope',sans-serif;letter-spacing:-.02em;text-align:center}.man img{width:90px;height:36px}
+ h2{font-size:48px}.ev a{grid-template-columns:1fr;gap:12px}.ev h3{font-size:40px}#pv{display:none}
+ .card{flex-direction:column;height:auto;padding:28px}.card h3{font-size:52px}.card .ph{position:relative;width:100%;height:260px;margin-top:20px;border-radius:8px}.card{position:relative;top:auto!important}
+ .cols{grid-template-columns:1fr}.hoh{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="bar"><div class="w"><img src="a/text_k.png" alt="Музей моды и портновского искусства имени Н. П. Ламановой"><div class="menu">Меню<b></b></div></div></div>
+
+<div class="hero">
+ <img class="head" src="a/head_k.png" alt="">
+ <canvas id="cv" width="560" height="640" aria-label="Платья музея"></canvas>
+ <h1 class="ser">Музей моды,<br>который стоит<br>увидеть вживую</h1>
+ <div class="cap" id="cap"></div>
+ <div class="info"><div class="w"><div>Вторник – суббота<br>11:00–19:00</div><div>Обзоры экспозиции<br>в 11:00, 14:00 и 17:00</div><div>Нижний Новгород<br>ул. Сергиевская, 8</div></div></div>
+</div>
+
+<section class="stats" style="margin-top:150px"><div class="w">
+ <div><div class="big">Вт–Сб</div><div class="lab ser">Открыто</div></div>
+ <div><div class="big">11:00–19:00</div><div class="lab ser">Часы работы</div></div>
+ <div><div class="big">3 раза</div><div class="lab ser">Обзор в день</div></div>
+</div></section>
+
+<section class="man"><div class="w"><p>Платья <img src="a/s1.png" alt=""> начала XX века,<br>швейные машины, обувь <img src="a/s2.png" alt=""><br><img src="a/s3.png" alt=""> кружево и бисер<br>можно рассмотреть вблизи</p></div></section>
+
+<section><div class="w">
+ <div class="row"><h2 class="ser">События</h2><a class="btn s" href="#">Все события</a></div>
+ <div class="ev">
+  <a href="#" data-i="a/shanel.jpg"><h3 class="ser">Русская Шанель</h3><p>26 ноября 2026, 18:00<br><span>Подиумный показ, ДКРТ, от 2 700 ₽</span></p><span class="btn">Записаться</span></a>
+  <a href="#" data-i="a/trio.jpg"><h3 class="ser">Обзор экспозиции</h3><p>Вторник – суббота, 11:00, 14:00 и 17:00<br><span>Проводит хранитель, входит в билет</span></p><span class="btn">Записаться</span></a>
+  <a href="#" data-i="a/constr.jpg"><h3 class="ser">Воркшоп по конструированию</h3><p>5 декабря 2026, 12:00<br><span>2,5 часа, 1 500 ₽</span></p><span class="btn">Записаться</span></a>
+ </div>
+</div></section>
+<img id="pv" alt="">
+
+<section><div class="w">
+ <div class="row"><h2 class="ser">Коллекция</h2><a class="btn" href="#">Вся коллекция</a></div>
+ <div class="cards">
+  <div class="card"><div class="l"><div><h3 class="ser">Платья начала XX века</h3><div class="tags"><span>Визитные платья</span><span>Вышивка</span><span>Шлейфы</span></div></div><div><a class="btn c" href="#">Смотреть коллекцию</a></div></div><img class="ph" src="a/p_visit.jpg" alt=""></div>
+  <div class="card"><div class="l"><div><h3 class="ser">Вечерние платья</h3><div class="tags"><span>Шёлк</span><span>Бисер</span><span>Тюль</span></div></div><div><a class="btn c" href="#">Смотреть коллекцию</a></div></div><img class="ph" src="a/p_yellow.jpg" alt=""></div>
+  <div class="card"><div class="l"><div><h3 class="ser">Платья 1920-х</h3><div class="tags"><span>Широкие рукава</span><span>Лён</span><span>Силуэт</span></div></div><div><a class="btn c" href="#">Смотреть коллекцию</a></div></div><img class="ph" src="a/p_narod.jpg" alt=""></div>
+  <div class="card"><div class="l"><div><h3 class="ser">Кружево и бисер</h3><div class="tags"><span>Чёрное кружево</span><span>Пайетки</span><span>Шлейфы</span></div></div><div><a class="btn" href="#">Смотреть коллекцию</a></div></div><img class="ph" src="a/p_ball.jpg" alt=""></div>
+ </div>
+</div></section>
+
+<div class="cta"><div class="w">
+ <h2 class="ser">Приходите</h2>
+ <div class="cols">
+  <div><h4>Режим работы</h4>Вторник – суббота, 11:00–19:00.<br>Понедельник и воскресенье выходной.<br>Обзоры в 11:00, 14:00 и 17:00.<h4 style="margin-top:40px">Билеты</h4>Полный 500 ₽, льготный 350 ₽.<br>Обзор входит в билет.</div>
+  <div><h4>Как нас найти</h4>Нижний Новгород, ул. Сергиевская, д. 8, пом. П2. Остановка «Улица Добролюбова», дальше вверх по Сергиевской до Арт Лофта PARLE.<br><a class="btn c" href="#" style="margin-top:16px">Как добраться</a><h4 style="margin-top:40px">Связь</h4>+7 (991) 830-12-76<br>olaparle@yandex.ru<br>Telegram: t.me/lamanovann</div>
+  <div></div>
+ </div>
+ <div class="legal">Частное учреждение культуры «Музей моды и портновского искусства им. Н. П. Ламановой». ИНН/КПП 5260482972/526001001, ОГРН 1225200012674. Входит в Ассоциацию частных и народных музеев России.</div>
+</div><img class="hoh" src="a/hohlova.png" alt=""></div>
+
+<script>
+(function(){
+var D=[['a/narod.png','Платье с широкими рукавами','1923'],['a/visit.png','Платье визитное, бежевое','1896'],['a/yellow.png','Платье вечернее, жёлтое','1900'],['a/ivory.png','Платье светлое, с вышивкой','1910']];
+var cv=document.getElementById('cv'),ctx=cv.getContext('2d'),cw=cv.width,ch=cv.height,cap=document.getElementById('cap');
+var srcs=[],ready=0;
+D.forEach(function(d,i){var im=new Image();im.onload=function(){var c=document.createElement('canvas');c.width=cw;c.height=ch;var g=c.getContext('2d');var h=ch,w=im.width*h/im.height;if(w>cw){w=cw;h=im.height*w/im.width}g.drawImage(im,(cw-w)/2,ch-h,w,h);srcs[i]=c;ready++};im.src=d[0]});
+var L=[];for(var x=0;x<cw;x++)L[x]=(.5+.5*Math.sin(x*.071)*Math.cos(x*.023+1)+.25*Math.sin(x*.19+2))*.2*ch;
+var IN=2800,HOLD=2400,OUT=1400,T=IN+HOLD+OUT,t0=performance.now(),cur=-1,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+function draw(src,p){ctx.clearRect(0,0,cw,ch);for(var x=0;x<cw;x+=2){var yc=Math.min(ch,Math.max(0,p*ch*1.25-L[x]));if(yc<=0)continue;ctx.drawImage(src,x,0,2,yc,x,0,2,yc);if(yc<ch)ctx.drawImage(src,x,Math.max(0,yc-1),2,1,x,yc,2,ch-yc)}}
+function frame(now){
+ var e=now-t0,n=Math.floor(e/T)%D.length,k=e%T,p;
+ if(k<IN)p=ease(k/IN);else if(k<IN+HOLD)p=1;else p=1-ease((k-IN-HOLD)/OUT);
+ if(rm)p=1;
+ var sc=Math.min(1,scrollY/520);p*=1-sc;
+ if(srcs[n]){draw(srcs[n],p)}
+ if(n!==cur&&srcs[n]){cur=n;cap.innerHTML=D[n][1]+'<small>'+D[n][2]+'</small>'}
+ cap.style.opacity=(k>IN*.8&&k<IN+HOLD+OUT*.2)?1:0;
+ requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+// event hover preview
+var pv=document.getElementById('pv');
+document.querySelectorAll('.ev a').forEach(function(a){
+ a.addEventListener('mouseenter',function(){pv.src=a.dataset.i;pv.classList.add('on')});
+ a.addEventListener('mouseleave',function(){pv.classList.remove('on')});
+ a.addEventListener('mousemove',function(e){pv.style.left=(e.clientX+30)+'px';pv.style.top=(e.clientY-100)+'px'})});
+})();
+</script>
